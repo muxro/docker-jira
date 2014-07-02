@@ -8,7 +8,7 @@
 $num_instances=1
 
 # Official CoreOS channel from which updates should be downloaded
-$update_channel='beta'
+$update_channel='alpha'
 
 # Log the serial consoles of CoreOS VMs to log/
 # Enable by setting value to true, disable with false
@@ -25,5 +25,5 @@ $expose_docker_tcp=2375
 
 # Setting for VirtualBox VMs
 #$vb_gui = false
-#$vb_memory = 1024
-#$vb_cpus = 1
+$vb_memory = 3600
+$vb_cpus = 4

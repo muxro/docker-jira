@@ -74,6 +74,8 @@ Vagrant.configure("2") do |config|
 
     config.vm.provider :vmware_fusion do |vb|
       vb.gui = $vb_gui
+      vb.vmx["memsize"] = $vb_memory
+      vb.vmx["numvcpus"] = $vb_cpus
     end
 
     config.vm.provider :virtualbox do |vb|
